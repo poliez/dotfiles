@@ -3,6 +3,9 @@
 # Terminate already running bar instances
 pkill polybar
 
+# Not the best place to do this, but this works
+wal -i ~/.config/papes
+
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
