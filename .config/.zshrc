@@ -19,9 +19,12 @@ setopt appendhistory extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+(cat ~/.cache/wal/sequences &)
+
 theme agnoster
 
 eval $(thefuck --alias)
 
 # To manage dotfiles easily
 alias config='git --git-dir=$HOME/.config/ --work-tree=$HOME'
+
