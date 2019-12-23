@@ -26,11 +26,10 @@ default_border none
 # e.g. if you are on W1 and press $mod+2 two times thw workspace changes will be the following: W1 -> W2 -> W1
 workspace_auto_back_and_forth yes
 
-# Reuse wal colors
-exec_always --no-startup-id $HOME/.config/wal/start.sh
-
-# Launch polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# Launch some swag
+exec_always --no-startup-id compton # Launch the compositor. Enables window transparency
+exec_always --no-startup-id $HOME/.config/wal/start.sh # Reuse wal colors
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh # Launch polybar
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
