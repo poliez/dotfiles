@@ -27,4 +27,3 @@ eval $(thefuck --alias)
 
 # To manage dotfiles easily
 alias config='git --git-dir=$HOME/.config/ --work-tree=$HOME'
-
